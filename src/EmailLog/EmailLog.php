@@ -30,6 +30,10 @@ class EmailLog extends Model implements EntityContract
         'to',
         'subject',
         'body',
+        'headers',
+        'attachments',
+        'cc',
+        'bcc',
     ];
 
     /**
@@ -38,10 +42,11 @@ class EmailLog extends Model implements EntityContract
      * @var array
      */
     protected $casts = [
-        'to'      => 'array',
-        'cc'      => 'array',
-        'bcc'     => 'array',
-        'headers' => 'array',
+        'to'          => 'array',
+        'cc'          => 'array',
+        'bcc'         => 'array',
+        'headers'     => 'array',
+        'attachments' => 'array',
     ];
 
     /**

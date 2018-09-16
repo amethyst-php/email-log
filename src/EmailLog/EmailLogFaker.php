@@ -21,8 +21,10 @@ class EmailLogFaker extends BaseFaker
         $faker = Factory::create();
 
         $bag = new Bag();
-        $bag->set('to', ['test@test.net']);
         $bag->set('from', 'test@test.net');
+        $bag->set('to', ['test@test.net']);
+        $bag->set('cc', 'test1@test.net');
+        $bag->set('bcc', 'test2@test.net');
         $bag->set('subject', 'Welcome');
         $bag->set('body', 'Hello');
 

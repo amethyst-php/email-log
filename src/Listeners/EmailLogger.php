@@ -33,12 +33,16 @@ class EmailLogger
         $parameters = [
             'from'    => $this->retrieveHeaderField($message, 'from')[0],
             'to'      => $this->retrieveHeaderField($message, 'to'),
+            'cc'      => $this->retrieveHeaderField($message, 'cc'),
             'bcc'     => $this->retrieveHeaderField($message, 'bcc'),
+            'headers' => array_map(function ($value) {
+                return ['name' => $value->getFieldName(), 'body' => $value->getFieldBody()];
+            }, $message->getHeaders()->getAll()),
             'subject' => $message->getSubject(),
             'body'    => $message->getBody(),
         ];
 
-        $this->manager->create($parameters);
+        $this->manager->createOrFail($parameters);
     }
 
     /**

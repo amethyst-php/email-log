@@ -37,6 +37,10 @@ class EmailLogManager extends ModelManager
         Attributes\To\ToAttribute::class,
         Attributes\Subject\SubjectAttribute::class,
         Attributes\Body\BodyAttribute::class,
+        Attributes\Headers\HeadersAttribute::class,
+        Attributes\Attachments\AttachmentsAttribute::class,
+        Attributes\Cc\CcAttribute::class,
+        Attributes\Bcc\BccAttribute::class,
     ];
 
     /**
