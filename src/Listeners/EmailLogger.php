@@ -1,9 +1,9 @@
 <?php
 
-namespace Railken\LaraOre\Listeners;
+namespace Railken\Amethyst\Listeners;
 
 use Illuminate\Mail\Events\MessageSending;
-use Railken\LaraOre\EmailLog\EmailLogManager;
+use Railken\Amethyst\Managers\EmailLogManager;
 use Swift_Message;
 
 class EmailLogger

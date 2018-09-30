@@ -1,8 +1,8 @@
-# lara-ore-email-log
+# amethyst-email-log
 
-[![Build Status](https://travis-ci.org/railken/lara-ore-email-log.svg?branch=master)](https://travis-ci.org/railken/lara-ore-email-log)
+[![Build Status](https://travis-ci.org/railken/amethyst-email-log.svg?branch=master)](https://travis-ci.org/railken/amethyst-email-log)
 
-This is a lara-ore package.
+[Amethyst](https://github.com/railken/amethyst) package.
 
 # Requirements
 
@@ -13,7 +13,7 @@ PHP 7.1 and later.
 You can install it via [Composer](https://getcomposer.org/) by typing the following command:
 
 ```bash
-composer require railken/lara-ore-email-log
+composer require railken/amethyst-email-log
 ```
 
 The package will automatically register itself.
