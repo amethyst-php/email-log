@@ -18,8 +18,8 @@ class EmailLogFaker extends Faker
         $bag = new Bag();
         $bag->set('from', 'test@test.net');
         $bag->set('to', ['test@test.net']);
-        $bag->set('cc', 'test1@test.net');
-        $bag->set('bcc', 'test2@test.net');
+        $bag->set('cc', ['test1@test.net']);
+        $bag->set('bcc', ['test2@test.net']);
         $bag->set('subject', 'Welcome');
         $bag->set('body', 'Hello');
 

@@ -12,7 +12,7 @@ class CreateEmailLogsTable extends Migration
      */
     public function up()
     {
-        Schema::create(Config::get('amethyst.email-log.managers.email-log.table'), function (Blueprint $table) {
+        Schema::create(Config::get('amethyst.email-log.data.email-log.table'), function (Blueprint $table) {
             $table->increments('id');
             $table->string('from');
             $table->text('to');
@@ -32,6 +32,6 @@ class CreateEmailLogsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(Config::get('amethyst.email-log.managers.email-log.table'));
+        Schema::dropIfExists(Config::get('amethyst.email-log.data.email-log.table'));
     }
 }
