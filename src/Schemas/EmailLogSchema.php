@@ -17,10 +17,14 @@ class EmailLogSchema extends Schema
         return [
             Attributes\IdAttribute::make(),
             Attributes\TextAttribute::make('name'),
-            Attributes\LongTextAttribute::make('from'),
-            Attributes\ArrayAttribute::make('to'),
-            Attributes\LongTextAttribute::make('subject'),
-            Attributes\LongTextAttribute::make('body'),
+            Attributes\LongTextAttribute::make('from')
+                ->setRequired(true),
+            Attributes\ArrayAttribute::make('to')
+                ->setRequired(true),
+            Attributes\LongTextAttribute::make('subject')
+                ->setRequired(true),
+            Attributes\LongTextAttribute::make('body')
+                ->setRequired(true),
             Attributes\ArrayAttribute::make('headers'),
             Attributes\ArrayAttribute::make('attachments'),
             Attributes\ArrayAttribute::make('cc'),

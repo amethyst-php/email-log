@@ -25,9 +25,9 @@ class EmailLogTest extends BaseTest
     protected $group = 'admin';
 
     /**
-     * Base path config.
+     * Route.name.
      *
      * @var string
      */
-    protected $config = 'amethyst.email-log.http.admin.email-log';
+    protected $route = 'admin.email-log';
 }

@@ -35,11 +35,11 @@ return [
     'http' => [
         'admin' => [
             'email-log' => [
-                'enabled'     => true,
-                'controller'  => Railken\Amethyst\Http\Controllers\Admin\EmailLogsController::class,
-                'router'      => [
-                    'as'        => 'email-log.',
-                    'prefix'    => '/email-logs',
+                'enabled'    => true,
+                'controller' => Railken\Amethyst\Http\Controllers\Admin\EmailLogsController::class,
+                'router'     => [
+                    'as'     => 'email-log.',
+                    'prefix' => '/email-logs',
                 ],
             ],
         ],

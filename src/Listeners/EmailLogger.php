@@ -51,7 +51,7 @@ class EmailLogger
      * @param \Swift_Message $message
      * @param $field
      *
-     * @return null|string
+     * @return string|null
      */
     public function retrieveHeaderField(Swift_Message $message, $field)
     {
