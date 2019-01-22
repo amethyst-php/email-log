@@ -12,7 +12,7 @@ class LoggerTest extends BaseTest
     /**
      * Retrieve basic url.
      *
-     * @return \Railken\Laravel\Manager\Contracts\ManagerContract
+     * @return \Railken\Lem\Contracts\ManagerContract
      */
     public function getManager()
     {
