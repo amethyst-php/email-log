@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name' => 'EmailLog',
-    'description' => 'EmailLog',
+    'name' => 'Email Log',
+    'description' => 'Email Log',
     'attributes' => []
 ];
