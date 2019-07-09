@@ -13,14 +13,14 @@ return [
         'email-log' => [
             'table'      => 'amethyst_email_logs',
             'comment'    => 'Email Log',
-            'model'      => Railken\Amethyst\Models\EmailLog::class,
-            'schema'     => Railken\Amethyst\Schemas\EmailLogSchema::class,
-            'repository' => Railken\Amethyst\Repositories\EmailLogRepository::class,
-            'serializer' => Railken\Amethyst\Serializers\EmailLogSerializer::class,
-            'validator'  => Railken\Amethyst\Validators\EmailLogValidator::class,
-            'authorizer' => Railken\Amethyst\Authorizers\EmailLogAuthorizer::class,
-            'faker'      => Railken\Amethyst\Fakers\EmailLogFaker::class,
-            'manager'    => Railken\Amethyst\Managers\EmailLogManager::class,
+            'model'      => Amethyst\Models\EmailLog::class,
+            'schema'     => Amethyst\Schemas\EmailLogSchema::class,
+            'repository' => Amethyst\Repositories\EmailLogRepository::class,
+            'serializer' => Amethyst\Serializers\EmailLogSerializer::class,
+            'validator'  => Amethyst\Validators\EmailLogValidator::class,
+            'authorizer' => Amethyst\Authorizers\EmailLogAuthorizer::class,
+            'faker'      => Amethyst\Fakers\EmailLogFaker::class,
+            'manager'    => Amethyst\Managers\EmailLogManager::class,
         ],
     ],
 
@@ -36,7 +36,7 @@ return [
         'admin' => [
             'email-log' => [
                 'enabled'    => true,
-                'controller' => Railken\Amethyst\Http\Controllers\Admin\EmailLogsController::class,
+                'controller' => Amethyst\Http\Controllers\Admin\EmailLogsController::class,
                 'router'     => [
                     'as'     => 'email-log.',
                     'prefix' => '/email-logs',

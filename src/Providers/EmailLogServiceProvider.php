@@ -1,11 +1,11 @@
 <?php
 
-namespace Railken\Amethyst\Providers;
+namespace Amethyst\Providers;
 
 use Illuminate\Mail\Events\MessageSending;
 use Illuminate\Support\Facades\Event;
-use Railken\Amethyst\Common\CommonServiceProvider;
-use Railken\Amethyst\Listeners\EmailLogger;
+use Amethyst\Common\CommonServiceProvider;
+use Amethyst\Listeners\EmailLogger;
 
 class EmailLogServiceProvider extends CommonServiceProvider
 {

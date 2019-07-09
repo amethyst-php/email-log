@@ -1,10 +1,10 @@
 <?php
 
-namespace Railken\Amethyst\Tests\Listeners;
+namespace Amethyst\Tests\Listeners;
 
 use Illuminate\Support\Facades\Mail;
-use Railken\Amethyst\Managers\EmailLogManager;
-use Railken\Amethyst\Tests\BaseTest;
+use Amethyst\Managers\EmailLogManager;
+use Amethyst\Tests\BaseTest;
 use Railken\Bag;
 
 class LoggerTest extends BaseTest

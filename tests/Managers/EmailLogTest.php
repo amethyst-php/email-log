@@ -1,10 +1,10 @@
 <?php
 
-namespace Railken\Amethyst\Tests\Managers;
+namespace Amethyst\Tests\Managers;
 
-use Railken\Amethyst\Fakers\EmailLogFaker;
-use Railken\Amethyst\Managers\EmailLogManager;
-use Railken\Amethyst\Tests\BaseTest;
+use Amethyst\Fakers\EmailLogFaker;
+use Amethyst\Managers\EmailLogManager;
+use Amethyst\Tests\BaseTest;
 use Railken\Lem\Support\Testing\TestableBaseTrait;
 
 class EmailLogTest extends BaseTest

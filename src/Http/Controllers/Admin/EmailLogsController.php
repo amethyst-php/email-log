@@ -1,10 +1,10 @@
 <?php
 
-namespace Railken\Amethyst\Http\Controllers\Admin;
+namespace Amethyst\Http\Controllers\Admin;
 
-use Railken\Amethyst\Api\Http\Controllers\RestManagerController;
-use Railken\Amethyst\Api\Http\Controllers\Traits as RestTraits;
-use Railken\Amethyst\Managers\EmailLogManager;
+use Amethyst\Api\Http\Controllers\RestManagerController;
+use Amethyst\Api\Http\Controllers\Traits as RestTraits;
+use Amethyst\Managers\EmailLogManager;
 
 class EmailLogsController extends RestManagerController
 {

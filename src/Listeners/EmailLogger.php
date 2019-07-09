@@ -1,9 +1,9 @@
 <?php
 
-namespace Railken\Amethyst\Listeners;
+namespace Amethyst\Listeners;
 
 use Illuminate\Mail\Events\MessageSending;
-use Railken\Amethyst\Managers\EmailLogManager;
+use Amethyst\Managers\EmailLogManager;
 use Swift_Message;
 
 class EmailLogger
