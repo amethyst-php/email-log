@@ -2,10 +2,10 @@
 
 namespace Amethyst\Providers;
 
-use Illuminate\Mail\Events\MessageSending;
-use Illuminate\Support\Facades\Event;
 use Amethyst\Common\CommonServiceProvider;
 use Amethyst\Listeners\EmailLogger;
+use Illuminate\Mail\Events\MessageSending;
+use Illuminate\Support\Facades\Event;
 
 class EmailLogServiceProvider extends CommonServiceProvider
 {

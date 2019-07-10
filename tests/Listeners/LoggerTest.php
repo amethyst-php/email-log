@@ -2,9 +2,9 @@
 
 namespace Amethyst\Tests\Listeners;
 
-use Illuminate\Support\Facades\Mail;
 use Amethyst\Managers\EmailLogManager;
 use Amethyst\Tests\BaseTest;
+use Illuminate\Support\Facades\Mail;
 use Railken\Bag;
 
 class LoggerTest extends BaseTest

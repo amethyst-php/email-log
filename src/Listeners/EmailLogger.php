@@ -2,8 +2,8 @@
 
 namespace Amethyst\Listeners;
 
-use Illuminate\Mail\Events\MessageSending;
 use Amethyst\Managers\EmailLogManager;
+use Illuminate\Mail\Events\MessageSending;
 use Swift_Message;
 
 class EmailLogger
