@@ -23,25 +23,4 @@ return [
             'manager'    => Amethyst\Managers\EmailLogManager::class,
         ],
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Http configuration
-    |--------------------------------------------------------------------------
-    |
-    | Here you may configure the routes
-    |
-    */
-    'http' => [
-        'admin' => [
-            'email-log' => [
-                'enabled'    => true,
-                'controller' => Amethyst\Http\Controllers\Admin\EmailLogsController::class,
-                'router'     => [
-                    'as'     => 'email-log.',
-                    'prefix' => '/email-logs',
-                ],
-            ],
-        ],
-    ],
 ];
